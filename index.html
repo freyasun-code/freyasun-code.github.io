@@ -1,16 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>My Photography Projects</title>
+  <style>
+    body {
+      background-color: #6a0dad; /* 紫色背景 */
+      font-family: Arial, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .section {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 12px;
+    }
+    .section h2 {
+      color: #ffddff;
+    }
+    img, video {
+      max-width: 100%;
+      display: block;
+      margin: 10px auto;
+      border-radius: 8px;
+    }
+    p {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My CS180 Portfolio!</h1>
-    <a href="./1/index.html">Project 1</a>
+  <div class="container">
+    <h1>My Photography Projects</h1>
+
+    <!-- Selfie -->
+    <div class="section" id="selfie">
+      <h2>1. Selfie: The Wrong Way vs. The Right Way</h2>
+      <img src="images/selfie_wrong.jpg" alt="Wrong Way Selfie">
+      <p>The wrong way selfie example...</p>
+      <img src="images/selfie_right.jpg" alt="Right Way Selfie">
+      <p>The right way selfie example...</p>
+    </div>
+
+    <!-- Architecture -->
+    <div class="section" id="architecture">
+      <h2>2. Architectural Perspective Compression</h2>
+      <video controls>
+        <source src="videos/architecture.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Demonstration of perspective compression in architectural photography...</p>
+    </div>
+
+    <!-- Dolly Zoom -->
+    <div class="section" id="dollyzoom">
+      <h2>3. The Dolly Zoom</h2>
+      <video controls>
+        <source src="videos/dollyzoom.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>The dolly zoom is a famous cinematic effect that changes perspective dynamically...</p>
+    </div>
+  </div>
 </body>
 </html>
