@@ -2,15 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Photography Projects</title>
+  <title>Project 0: Becoming Friends with Your Camera</title>
   <style>
     body {
-      background-color: #6a0dad; /* 紫色背景 */
+      background-color: #F1E3F0; /* 紫色背景 */
       font-family: Arial, sans-serif;
       color: white;
       margin: 0;
       padding: 0;
     }
+    /* 导航栏 */
+    nav {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #ffddff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     .container {
       width: 80%;
       margin: auto;
@@ -23,11 +41,12 @@
     .section {
       background: rgba(255,255,255,0.1);
       padding: 20px;
-      margin: 20px 0;
+      margin: 40px 0;
       border-radius: 12px;
     }
     .section h2 {
       color: #ffddff;
+      text-align: center;
     }
     img, video {
       max-width: 100%;
@@ -41,8 +60,15 @@
   </style>
 </head>
 <body>
+  <!-- 导航栏 -->
+  <nav>
+    <a href="#selfie">Selfie</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#dollyzoom">Dolly Zoom</a>
+  </nav>
+
   <div class="container">
-    <h1>My Photography Projects</h1>
+    <h1>Project 0: Becoming Friends with Your Camera</h1>
 
     <!-- Selfie -->
     <div class="section" id="selfie">
